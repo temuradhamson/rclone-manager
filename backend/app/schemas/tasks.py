@@ -35,6 +35,7 @@ class TaskResponse(BaseModel):
     dst_path: str
     sync_mode: str
     is_enabled: bool
+    bisync_initialized: bool
     extra_flags: str | None
     created_at: datetime
     updated_at: datetime

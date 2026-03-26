@@ -75,7 +75,7 @@ class RcloneClient:
         }
         if config:
             data["_config"] = config
-        result = await self._post("sync/copy", data, timeout=10)
+        result = await self._post("sync/copy", data, timeout=300)
         return result.get("jobid")
 
     async def start_sync(self, src_fs: str, dst_fs: str, src_remote: str = "", dst_remote: str = "",
@@ -89,22 +89,35 @@ class RcloneClient:
         }
         if config:
             data["_config"] = config
-        result = await self._post("sync/sync", data, timeout=10)
+        result = await self._post("sync/sync", data, timeout=300)
         return result.get("jobid")
 
     async def start_bisync(self, path1: str, path2: str,
-                           extra_flags: dict | None = None, async_: bool = True) -> int | None:
-        params, config = self._split_flags(extra_flags)
-        data = {
-            "path1": path1,
-            "path2": path2,
-            "_async": async_,
-            **params,
-        }
-        if config:
-            data["_config"] = config
-        result = await self._post("sync/bisync", data, timeout=10)
-        return result.get("jobid")
+                           extra_flags: dict | None = None, resync: bool = False) -> None:
+        """Run bisync via CLI subprocess — RC API bisync is unstable on Windows."""
+        import asyncio
+        from app.core.config import settings
+
+        cmd = [settings.rclone_path, "bisync", path1, path2, "-v"]
+        if resync:
+            cmd.append("--resync")
+        # Add config flags
+        _, config = self._split_flags(extra_flags)
+        if config.get("BackupDir"):
+            cmd.extend(["--backup-dir", config["BackupDir"]])
+        if config.get("Suffix"):
+            cmd.extend(["--suffix", config["Suffix"]])
+
+        process = await asyncio.create_subprocess_exec(
+            *cmd,
+            stdout=asyncio.subprocess.PIPE,
+            stderr=asyncio.subprocess.PIPE,
+            creationflags=0x08000000,  # CREATE_NO_WINDOW
+        )
+        stdout, stderr = await process.communicate()
+        if process.returncode != 0:
+            error_text = stderr.decode("utf-8", errors="replace")
+            raise RuntimeError(f"bisync failed: {error_text[-500:]}")
 
     async def job_status(self, job_id: int) -> dict:
         result = await self._post("job/status", {"jobid": job_id})

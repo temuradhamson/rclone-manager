@@ -29,7 +29,7 @@ async def _monitor_loop():
                     continue
 
                 for execution in running:
-                    if not execution.rclone_job_id:
+                    if not execution.rclone_job_id or execution.rclone_job_id < 0:
                         continue
                     try:
                         status = await rclone_client.job_status(execution.rclone_job_id)

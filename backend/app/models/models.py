@@ -29,6 +29,7 @@ class SyncTask(Base):
     dst_path: Mapped[str] = mapped_column(String(1024))
     sync_mode: Mapped[str] = mapped_column(String(20))  # copy_to_local, copy_to_remote, sync_to_local, sync_to_remote, bisync
     is_enabled: Mapped[bool] = mapped_column(Boolean, default=True)
+    bisync_initialized: Mapped[bool] = mapped_column(Boolean, default=False)
     extra_flags: Mapped[str | None] = mapped_column(Text)  # JSON array
     created_at: Mapped[datetime] = mapped_column(DateTime, server_default=func.now())
     updated_at: Mapped[datetime] = mapped_column(DateTime, server_default=func.now(), onupdate=func.now())
