@@ -1,0 +1,109 @@
+<template>
+  <div class="bg-gray-900 rounded-lg border border-gray-800 p-4 hover:border-gray-700 transition-colors">
+    <div class="flex items-start justify-between">
+      <div class="flex-1 min-w-0">
+        <div class="flex items-center gap-2">
+          <h3 class="text-sm font-medium text-white truncate">{{ task.name }}</h3>
+          <span
+            class="px-1.5 py-0.5 text-[10px] rounded font-medium"
+            :class="task.is_enabled ? 'bg-green-900/50 text-green-400' : 'bg-gray-800 text-gray-500'"
+          >
+            {{ task.is_enabled ? 'ON' : 'OFF' }}
+          </span>
+        </div>
+        <p v-if="task.description" class="text-xs text-gray-500 mt-1 truncate">{{ task.description }}</p>
+      </div>
+      <div class="flex items-center gap-1 ml-2">
+        <button
+          class="p-1.5 rounded hover:bg-gray-800 text-gray-400 hover:text-blue-400 transition-colors"
+          title="Edit"
+          @click="$emit('edit', task)"
+        >
+          <PencilSquareIcon class="w-4 h-4" />
+        </button>
+        <button
+          class="p-1.5 rounded hover:bg-gray-800 text-gray-400 hover:text-green-400 transition-colors"
+          title="Run now"
+          @click="$emit('run', task.id)"
+        >
+          <PlayIcon class="w-4 h-4" />
+        </button>
+        <button
+          class="p-1.5 rounded hover:bg-gray-800 text-gray-400 hover:text-yellow-400 transition-colors"
+          title="Toggle"
+          @click="$emit('toggle', task.id)"
+        >
+          <PauseIcon class="w-4 h-4" />
+        </button>
+        <button
+          class="p-1.5 rounded hover:bg-gray-800 text-gray-400 hover:text-red-400 transition-colors"
+          title="Delete"
+          @click="$emit('delete', task.id)"
+        >
+          <TrashIcon class="w-4 h-4" />
+        </button>
+      </div>
+    </div>
+
+    <!-- Paths -->
+    <div class="mt-3 flex items-center gap-2 text-xs">
+      <span class="text-gray-400 truncate max-w-[40%]">{{ task.src_path }}</span>
+      <ArrowRightIcon class="w-3 h-3 text-gray-600 shrink-0" />
+      <span class="text-gray-400 truncate max-w-[40%]">{{ task.dst_path }}</span>
+    </div>
+
+    <!-- Mode badge -->
+    <div class="mt-2 flex items-center gap-2">
+      <span class="px-2 py-0.5 bg-blue-900/30 text-blue-400 text-[10px] rounded-full">
+        {{ modeLabel }}
+      </span>
+    </div>
+
+    <!-- Progress bar when running -->
+    <div v-if="progressData" class="mt-3">
+      <div class="w-full h-1.5 bg-gray-800 rounded-full overflow-hidden">
+        <div
+          class="h-full bg-blue-500 transition-all duration-500"
+          :style="{ width: `${progressData.data?.percentage || 0}%` }"
+        />
+      </div>
+      <div class="flex justify-between mt-1 text-[10px] text-gray-500">
+        <span>{{ progressData.data?.percentage || 0 }}%</span>
+        <span>{{ formatSpeed(progressData.data?.speed || 0) }}</span>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts">
+import { PlayIcon, PauseIcon, TrashIcon, ArrowRightIcon, PencilSquareIcon } from '@heroicons/vue/24/outline'
+
+const props = defineProps<{
+  task: any
+  progressData?: any
+}>()
+
+defineEmits<{
+  (e: 'edit', task: any): void
+  (e: 'run', id: number): void
+  (e: 'toggle', id: number): void
+  (e: 'delete', id: number): void
+}>()
+
+const modeLabels: Record<string, string> = {
+  copy_to_local: 'Copy: Cloud -> Local',
+  copy_to_remote: 'Copy: Local -> Cloud',
+  sync_to_local: 'Sync: Cloud -> Local',
+  sync_to_remote: 'Sync: Local -> Cloud',
+  bisync: 'Bidirectional Sync',
+}
+
+const modeLabel = computed(() => modeLabels[props.task.sync_mode] || props.task.sync_mode)
+
+function formatSpeed(bytesPerSec: number): string {
+  if (bytesPerSec === 0) return ''
+  const units = ['B/s', 'KB/s', 'MB/s', 'GB/s']
+  const i = Math.floor(Math.log(bytesPerSec) / Math.log(1024))
+  return `${(bytesPerSec / Math.pow(1024, i)).toFixed(1)} ${units[i]}`
+}
+</script>
