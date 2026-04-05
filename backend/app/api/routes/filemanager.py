@@ -281,11 +281,45 @@ async def fm_upload(path: str = Form(""), files: list[UploadFile] = File(...)):
     return _build_response(path, result_files)
 
 
+MIME_MAP = {
+    # Video
+    "mp4": "video/mp4", "mkv": "video/x-matroska", "avi": "video/x-msvideo",
+    "webm": "video/webm", "mov": "video/quicktime", "wmv": "video/x-ms-wmv",
+    "flv": "video/x-flv", "m4v": "video/x-m4v", "ts": "video/mp2t",
+    # Audio
+    "mp3": "audio/mpeg", "wav": "audio/wav", "flac": "audio/flac",
+    "ogg": "audio/ogg", "m4a": "audio/mp4", "aac": "audio/aac", "wma": "audio/x-ms-wma",
+    # Images
+    "jpg": "image/jpeg", "jpeg": "image/jpeg", "png": "image/png",
+    "gif": "image/gif", "webp": "image/webp", "svg": "image/svg+xml", "bmp": "image/bmp",
+    # Documents
+    "pdf": "application/pdf", "txt": "text/plain", "html": "text/html",
+    "css": "text/css", "js": "text/javascript", "json": "application/json",
+    "xml": "text/xml", "csv": "text/csv", "md": "text/markdown",
+}
+
+
+def _get_mime(filename: str) -> str:
+    ext = filename.rsplit(".", 1)[-1].lower() if "." in filename else ""
+    return MIME_MAP.get(ext, "application/octet-stream")
+
+
+@router.get("/preview")
+async def fm_preview(path: str):
+    """Stream file for in-browser preview (video, audio, images, docs)."""
+    path = path.replace("\\", "/")
+    if _is_remote(path) or not os.path.isfile(path):
+        return JSONResponse({"error": "Preview only for local files"}, 400)
+
+    mime = _get_mime(path)
+    return FileResponse(path, media_type=mime, filename=os.path.basename(path))
+
+
 @router.get("/download")
 async def fm_download(path: str):
     path = path.replace("\\", "/")
     if not _is_remote(path) and os.path.isfile(path):
-        return FileResponse(path, filename=os.path.basename(path))
+        return FileResponse(path, filename=os.path.basename(path), media_type="application/octet-stream")
     return JSONResponse({"error": "Download not supported for remote files"}, 400)
 
 

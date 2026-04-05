@@ -1,17 +1,19 @@
 <template>
   <div class="h-[calc(100vh-120px)]">
-    <VueFinder
-      :driver="driver"
-      :features="features"
-      theme="dark"
-      locale="en"
-    />
+    <ClientOnly>
+      <VueFinder
+        id="rclone-fm"
+        :driver="driver"
+        :features="features"
+        theme="dark"
+        locale="en"
+      />
+    </ClientOnly>
   </div>
 </template>
 
 <script setup lang="ts">
-import { VueFinder, RemoteDriver } from 'vuefinder'
-import 'vuefinder/dist/vuefinder.css'
+import { RemoteDriver } from 'vuefinder'
 
 const config = useRuntimeConfig()
 
@@ -38,14 +40,14 @@ const driver = new RemoteDriver({
 const features = {
   archive: false,
   unarchive: false,
-  preview: false,
   createFile: false,
   save: false,
+  preview: true,
+  download: true,
 }
 </script>
 
 <style>
-/* Override VueFinder styles to match our dark theme */
 .vuefinder {
   height: 100% !important;
   border-radius: 0.5rem;
