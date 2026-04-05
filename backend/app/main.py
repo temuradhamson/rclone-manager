@@ -19,7 +19,7 @@ from app.models.models import Base, TaskExecution
 from app.services.progress_monitor import start_monitor, stop_monitor
 from app.services.scheduler import start_scheduler, stop_scheduler
 
-from app.api.routes import files, remotes, tasks, execution, ws
+from app.api.routes import files, remotes, tasks, execution, ws, stats, conflicts, notifications
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(name)s %(levelname)s %(message)s")
 # Suppress noisy httpx request logging from progress monitor polling
@@ -87,6 +87,9 @@ app.include_router(remotes.router)
 app.include_router(tasks.router)
 app.include_router(execution.router)
 app.include_router(ws.router)
+app.include_router(stats.router)
+app.include_router(conflicts.router)
+app.include_router(notifications.router)
 
 
 @app.get("/api/health")

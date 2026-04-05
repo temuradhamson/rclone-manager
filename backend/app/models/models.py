@@ -109,3 +109,27 @@ class TransferLog(Base):
     timestamp: Mapped[datetime] = mapped_column(DateTime, server_default=func.now())
 
     execution: Mapped["TaskExecution"] = relationship(back_populates="transfers")
+
+
+class DailyStats(Base):
+    __tablename__ = "daily_stats"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    date: Mapped[str] = mapped_column(String(10), index=True)  # YYYY-MM-DD
+    remote_name: Mapped[str] = mapped_column(String(255), index=True)
+    bytes_uploaded: Mapped[int] = mapped_column(BigInteger, default=0)
+    bytes_downloaded: Mapped[int] = mapped_column(BigInteger, default=0)
+    files_transferred: Mapped[int] = mapped_column(Integer, default=0)
+    sync_count: Mapped[int] = mapped_column(Integer, default=0)
+    errors_count: Mapped[int] = mapped_column(Integer, default=0)
+
+
+class NotificationSettings(Base):
+    __tablename__ = "notification_settings"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    telegram_bot_token: Mapped[str | None] = mapped_column(String(255))
+    telegram_chat_id: Mapped[str | None] = mapped_column(String(50))
+    notify_on_error: Mapped[bool] = mapped_column(Boolean, default=True)
+    notify_on_complete: Mapped[bool] = mapped_column(Boolean, default=False)
+    notify_on_conflict: Mapped[bool] = mapped_column(Boolean, default=True)
