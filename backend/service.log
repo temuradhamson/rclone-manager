@@ -1,0 +1,1567 @@
+INFO:     Started server process [34880]
+INFO:     Waiting for application startup.
+2026-03-29 17:54:22,435 app.main INFO Database ready
+2026-03-29 17:54:22,435 app.core.rclone_daemon INFO Starting rclone daemon on port 5573...
+2026-03-29 17:54:22,919 app.core.rclone_daemon INFO rclone daemon is ready
+2026-03-29 17:54:22,919 app.services.progress_monitor INFO Progress monitor started
+2026-03-29 17:54:22,919 app.services.scheduler INFO Scheduler started
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+2026-03-29 17:54:27,933 app.services.scheduler INFO Scheduler loop started
+INFO:     127.0.0.1:62677 - "GET /api/health HTTP/1.1" 200 OK
+2026-03-29 18:11:28,314 app.services.scheduler INFO Task 8 (Sync Документы) already running, skipping scheduled run
+2026-03-29 18:12:28,341 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+INFO:     127.0.0.1:62995 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63049 - "POST /api/tasks/2/run HTTP/1.1" 200 OK
+2026-03-29 19:12:29,565 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-03-29 19:12:30,011 app.services.scheduler INFO Scheduled run: task 3 (Sync _INVOICES)
+2026-03-29 19:12:30,446 app.services.scheduler INFO Scheduled run: task 4 (Sync _PROJECTS)
+2026-03-29 19:12:30,884 app.services.scheduler INFO Scheduled run: task 5 (Sync Pictures)
+2026-03-29 19:12:31,364 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+INFO:     127.0.0.1:63636 - "GET /api/health HTTP/1.1" 200 OK
+2026-03-29 20:12:35,705 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-29 21:11:39,792 app.services.scheduler INFO Task 8 (Sync Документы) already running, skipping scheduled run
+2026-03-29 21:12:39,829 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-29 21:12:39,834 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-03-29 21:12:39,838 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-03-29 21:12:39,842 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+INFO:     127.0.0.1:51086 - "GET /api/health HTTP/1.1" 200 OK
+2026-03-29 22:12:43,922 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-29 22:13:37,339 app.services.progress_monitor WARNING Job status check failed for execution 100: All connection attempts failed
+2026-03-29 22:13:41,305 app.services.progress_monitor WARNING Job status check failed for execution 97: All connection attempts failed
+2026-03-29 22:13:43,780 app.services.progress_monitor WARNING Job status check failed for execution 98: All connection attempts failed
+2026-03-29 22:13:46,233 app.services.progress_monitor WARNING Job status check failed for execution 99: All connection attempts failed
+INFO:     127.0.0.1:52536 - "GET /api/health HTTP/1.1" 200 OK
+2026-03-29 22:14:44,068 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-03-29 22:23:44,709 app.services.scheduler INFO Scheduled run: task 3 (Sync _INVOICES)
+2026-03-29 22:33:45,483 app.services.scheduler INFO Scheduled run: task 4 (Sync _PROJECTS)
+2026-03-29 22:43:46,612 app.services.scheduler INFO Scheduled run: task 5 (Sync Pictures)
+2026-03-29 23:12:50,461 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 00:11:25,229 app.services.scheduler INFO Task 8 (Sync Документы) already running, skipping scheduled run
+2026-03-30 00:12:55,275 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 00:14:55,518 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-03-30 00:23:57,486 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-03-30 00:33:59,048 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-03-30 01:13:03,576 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 02:13:11,314 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 02:15:11,550 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-03-30 02:24:13,425 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-03-30 02:33:47,566 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-03-30 02:43:49,288 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-03-30 03:11:22,146 app.services.scheduler INFO Task 8 (Sync Документы) already running, skipping scheduled run
+2026-03-30 03:13:22,328 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+INFO:     127.0.0.1:56632 - "GET /api/health HTTP/1.1" 200 OK
+2026-03-30 04:13:30,585 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 04:15:17,837 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-03-30 04:24:07,586 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-03-30 04:34:12,028 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-03-30 04:34:28,553 app.services.progress_monitor ERROR Progress monitor error: (sqlite3.OperationalError) database is locked
+[SQL: SELECT task_executions.id, task_executions.task_id, task_executions.rclone_job_id, task_executions.status, task_executions."trigger", task_executions.started_at, task_executions.finished_at, task_executions.duration_seconds, task_executions.bytes_transferred, task_executions.files_transferred, task_executions.files_checked, task_executions.files_deleted, task_executions.errors_count, task_executions.error_message, task_executions.stats_json, task_executions.log_output 
+FROM task_executions 
+WHERE task_executions.status = ?]
+[parameters: ('running',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-03-30 04:34:38,966 app.services.progress_monitor ERROR Progress monitor error: (sqlite3.OperationalError) database is locked
+[SQL: SELECT task_executions.id, task_executions.task_id, task_executions.rclone_job_id, task_executions.status, task_executions."trigger", task_executions.started_at, task_executions.finished_at, task_executions.duration_seconds, task_executions.bytes_transferred, task_executions.files_transferred, task_executions.files_checked, task_executions.files_deleted, task_executions.errors_count, task_executions.error_message, task_executions.stats_json, task_executions.log_output 
+FROM task_executions 
+WHERE task_executions.status = ?]
+[parameters: ('running',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-03-30 05:13:47,758 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 06:11:20,323 app.services.scheduler INFO Task 8 (Sync Документы) already running, skipping scheduled run
+2026-03-30 06:13:50,407 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 06:15:20,586 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-03-30 06:23:51,437 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-03-30 06:33:52,013 app.services.scheduler INFO Scheduled run: task 4 (Sync _PROJECTS)
+2026-03-30 06:43:53,325 app.services.scheduler INFO Scheduled run: task 5 (Sync Pictures)
+2026-03-30 07:13:55,600 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 08:13:58,638 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 08:15:28,680 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-03-30 08:23:59,762 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-03-30 08:34:00,394 app.services.scheduler INFO Scheduled run: task 4 (Sync _PROJECTS)
+2026-03-30 09:11:33,768 app.services.scheduler INFO Task 8 (Sync Документы) already running, skipping scheduled run
+2026-03-30 09:14:03,821 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 10:14:06,858 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 10:15:36,909 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-03-30 10:24:07,746 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-03-30 10:29:07,886 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 10:34:08,244 app.services.scheduler INFO Scheduled run: task 4 (Sync _PROJECTS)
+2026-03-30 10:44:09,024 app.services.scheduler INFO Scheduled run: task 5 (Sync Pictures)
+2026-03-30 10:44:09,449 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 10:45:39,646 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-03-30 10:59:10,806 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 11:14:11,735 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 11:15:41,792 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-03-30 11:24:12,718 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-03-30 11:29:12,847 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 11:34:13,086 app.services.scheduler INFO Scheduled run: task 4 (Sync _PROJECTS)
+2026-03-30 11:44:14,022 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 11:45:44,282 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-03-30 11:59:15,274 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 12:11:45,868 app.services.scheduler INFO Task 8 (Sync Документы) already running, skipping scheduled run
+2026-03-30 12:14:16,023 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 12:15:46,074 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-03-30 12:23:46,800 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-03-30 12:29:17,099 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 12:34:17,313 app.services.scheduler INFO Scheduled run: task 4 (Sync _PROJECTS)
+2026-03-30 12:44:18,237 app.services.scheduler INFO Scheduled run: task 5 (Sync Pictures)
+2026-03-30 12:44:18,673 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 12:45:48,818 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-03-30 12:59:19,870 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 13:11:20,387 app.services.scheduler INFO Task 8 (Sync Документы) already running, skipping scheduled run
+2026-03-30 13:14:20,490 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 13:15:50,565 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-03-30 13:23:51,324 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-03-30 13:29:21,751 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 13:34:22,105 app.services.scheduler INFO Scheduled run: task 4 (Sync _PROJECTS)
+2026-03-30 13:44:23,078 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 13:45:53,245 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-03-30 13:59:24,006 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+INFO:     Started server process [8320]
+INFO:     Waiting for application startup.
+2026-03-30 14:34:06,375 app.main INFO Database ready
+2026-03-30 14:34:06,375 app.core.rclone_daemon INFO Starting rclone daemon on port 5573...
+2026-03-30 14:34:07,447 app.core.rclone_daemon INFO rclone daemon is ready
+2026-03-30 14:34:07,447 app.services.progress_monitor INFO Progress monitor started
+2026-03-30 14:34:07,447 app.services.scheduler INFO Scheduler started
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+2026-03-30 14:34:12,464 app.services.scheduler INFO Scheduler loop started
+2026-03-30 14:34:12,472 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-03-30 14:34:12,945 app.services.scheduler INFO Scheduled run: task 3 (Sync _INVOICES)
+2026-03-30 14:34:13,413 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+INFO:     127.0.0.1:49884 - "GET /api/health HTTP/1.1" 200 OK
+2026-03-30 14:34:43,444 app.services.scheduler INFO Scheduled run: task 4 (Sync _PROJECTS)
+INFO:     127.0.0.1:51434 - "GET /api/health HTTP/1.1" 200 OK
+2026-03-30 14:44:46,140 app.services.scheduler INFO Scheduled run: task 5 (Sync Pictures)
+2026-03-30 14:49:16,873 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 15:04:18,133 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-03-30 15:04:18,591 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 15:11:19,396 app.services.scheduler INFO Task 8 (Sync Документы) already running, skipping scheduled run
+2026-03-30 15:19:20,168 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 15:34:22,049 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-30 15:34:22,056 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-03-30 15:34:22,061 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 15:34:52,084 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+INFO:     127.0.0.1:62790 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62935 - "POST /api/tasks/8/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63047 - "GET /api/tasks/8/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63263 - "GET /api/tasks/8/status HTTP/1.1" 200 OK
+2026-03-30 15:49:23,179 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 15:49:23,190 app.services.rclone_client INFO Removed stale bisync lock file: C:\Users\xtech\AppData\Local\rclone\bisync\onedrive_Документы..F__Документы.lck
+2026-03-30 15:55:12,225 app.services.sync_engine ERROR Bisync failed for task 8: bisync failed: _Документы.lck: The system cannot find the file specified.
+2026/03/30 15:55:12 INFO  : 
+Transferred:   	    2.605 MiB / 2.605 MiB, 100%, 60.578 KiB/s, ETA 0s
+Errors:                 1 (retrying may help)
+Checks:             88250 / 88250, 100%, Listed 186872
+Transferred:            4 / 4, 100%
+Elapsed time:      8m55.9s
+
+2026/03/30 15:55:12 NOTICE: Failed to bisync: remove C:\Users\xtech\AppData\Local\rclone\bisync\onedrive_Документы..F__Документы.lck: The system cannot find the file specified.
+
+2026-03-30 16:04:25,285 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-30 16:04:25,291 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+INFO:     Started server process [8468]
+INFO:     Waiting for application startup.
+2026-03-30 16:54:46,648 app.main INFO Database ready
+2026-03-30 16:54:46,664 app.main INFO Cleaned up 2 stale running execution(s)
+2026-03-30 16:54:46,664 app.core.rclone_daemon INFO Starting rclone daemon on port 5573...
+2026-03-30 16:54:47,275 app.core.rclone_daemon INFO rclone daemon is ready
+2026-03-30 16:54:47,275 app.services.progress_monitor INFO Progress monitor started
+2026-03-30 16:54:47,275 app.services.scheduler INFO Scheduler started
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+2026-03-30 16:54:52,278 app.services.scheduler INFO Scheduler loop started
+INFO:     127.0.0.1:51931 - "GET /api/health HTTP/1.1" 200 OK
+2026-03-30 17:04:52,460 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-03-30 17:04:52,957 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 17:11:23,129 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-03-30 17:19:53,318 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 17:34:53,659 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-03-30 17:34:54,137 app.services.scheduler INFO Scheduled run: task 3 (Sync _INVOICES)
+2026-03-30 17:34:54,651 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 17:35:24,678 app.services.scheduler INFO Scheduled run: task 4 (Sync _PROJECTS)
+2026-03-30 17:49:56,073 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 18:04:56,937 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-03-30 18:04:57,655 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 18:19:58,489 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 18:34:59,520 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-03-30 18:35:00,002 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-03-30 18:35:00,008 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 18:35:30,040 app.services.scheduler INFO Scheduled run: task 4 (Sync _PROJECTS)
+2026-03-30 18:45:02,021 app.services.scheduler INFO Scheduled run: task 5 (Sync Pictures)
+2026-03-30 18:50:02,843 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 19:05:04,217 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-30 19:05:04,224 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 19:11:34,912 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-03-30 19:20:05,755 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+INFO:     Started server process [3712]
+INFO:     Waiting for application startup.
+2026-03-30 21:22:35,881 app.main INFO Database ready
+2026-03-30 21:22:35,897 app.main INFO Cleaned up 4 stale running execution(s)
+2026-03-30 21:22:35,897 app.core.rclone_daemon INFO Starting rclone daemon on port 5573...
+2026-03-30 21:22:36,470 app.core.rclone_daemon INFO rclone daemon is ready
+2026-03-30 21:22:36,470 app.services.progress_monitor INFO Progress monitor started
+2026-03-30 21:22:36,470 app.services.scheduler INFO Scheduler started
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+2026-03-30 21:22:41,478 app.services.scheduler INFO Scheduler loop started
+2026-03-30 21:22:41,493 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-03-30 21:22:42,026 app.services.scheduler INFO Scheduled run: task 3 (Sync _INVOICES)
+2026-03-30 21:22:42,490 app.services.scheduler INFO Scheduled run: task 4 (Sync _PROJECTS)
+2026-03-30 21:22:43,151 app.services.scheduler INFO Scheduled run: task 5 (Sync Pictures)
+2026-03-30 21:22:43,628 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 21:22:43,656 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+INFO:     127.0.0.1:49953 - "GET /api/health HTTP/1.1" 200 OK
+2026-03-30 21:37:44,138 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 21:52:46,105 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-03-30 21:52:46,590 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 22:07:47,331 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 22:22:49,068 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-30 22:22:49,075 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-03-30 22:22:49,080 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-03-30 22:22:49,084 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 22:37:50,146 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 22:52:51,224 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-30 22:52:51,230 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 23:07:52,617 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 23:22:54,897 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-30 23:22:54,903 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-03-30 23:22:54,908 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-03-30 23:22:54,912 app.services.scheduler INFO Scheduled run: task 5 (Sync Pictures)
+2026-03-30 23:22:55,385 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 23:22:55,398 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+INFO:     127.0.0.1:54026 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54053 - "GET /api/tasks HTTP/1.1" 200 OK
+2026-03-30 23:37:56,410 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-30 23:52:58,071 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-30 23:52:58,077 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+INFO:     127.0.0.1:60602 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60920 - "GET /api/executions?limit=30 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60933 - "GET /api/ HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60935 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60940 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60950 - "GET /api/tasks/executions/list?limit=30 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60956 - "GET /api/tasks/2/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60961 - "GET /api/tasks/3/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60964 - "GET /api/tasks/4/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60967 - "GET /api/tasks/5/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60971 - "GET /api/tasks/6/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60972 - "GET /api/tasks/8/status HTTP/1.1" 200 OK
+2026-03-31 00:08:00,551 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 00:23:01,558 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-31 00:23:01,565 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-03-31 00:23:01,571 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-03-31 00:23:01,578 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 00:38:03,488 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 00:53:05,106 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-31 00:53:05,113 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 01:08:08,474 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 01:23:10,110 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-31 01:23:10,118 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-03-31 01:23:10,124 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-03-31 01:23:10,130 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-03-31 01:23:10,137 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 01:23:10,157 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-03-31 01:38:12,003 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 01:53:13,778 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-31 01:53:13,785 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 02:08:15,682 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 02:22:46,506 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-31 02:22:46,514 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-03-31 02:22:46,520 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-03-31 02:23:16,536 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 02:38:18,068 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 02:52:50,554 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-31 02:53:20,728 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 03:08:21,966 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 03:22:53,077 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-31 03:22:53,085 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-03-31 03:22:53,091 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-03-31 03:23:23,110 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-03-31 03:23:23,116 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 03:23:23,371 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-03-31 03:38:25,072 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 03:52:56,516 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-31 03:53:26,594 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 04:08:28,460 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 04:23:00,530 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-31 04:23:00,538 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-03-31 04:23:00,543 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-03-31 04:23:30,566 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 04:38:31,968 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 04:53:03,263 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-31 04:53:33,446 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 05:08:35,639 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 05:23:07,883 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-31 05:23:07,890 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-03-31 05:23:07,896 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-03-31 05:23:07,902 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-03-31 05:23:37,920 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 05:23:37,938 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-03-31 05:38:40,258 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 05:53:11,847 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-31 05:53:41,866 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 06:08:44,801 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 06:22:46,596 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-31 06:22:46,604 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-03-31 06:22:46,610 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-03-31 06:23:46,631 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 06:38:48,289 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 06:52:49,592 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-31 06:53:49,716 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 07:08:51,969 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 07:22:53,608 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-31 07:22:53,624 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-03-31 07:22:53,630 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-03-31 07:23:23,687 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-03-31 07:23:53,709 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 07:23:53,744 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-03-31 07:38:56,111 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 07:52:57,816 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-31 07:53:57,973 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 08:08:59,874 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 08:23:02,185 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-31 08:23:02,441 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-03-31 08:23:02,448 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-03-31 08:24:02,476 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 08:39:04,248 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 08:53:05,928 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-31 08:54:05,957 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 09:09:07,573 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 09:23:08,492 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-31 09:23:08,512 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-03-31 09:23:08,522 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-03-31 09:23:08,532 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+INFO:     127.0.0.1:57811 - "GET /api/health HTTP/1.1" 200 OK
+2026-03-31 09:24:08,617 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 09:24:08,647 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-03-31 09:39:10,105 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 09:53:13,867 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-31 09:54:14,068 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 10:09:15,589 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 10:22:47,655 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-31 10:22:47,661 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-03-31 10:22:47,666 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-03-31 10:24:17,705 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 10:39:20,053 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 10:52:52,323 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-31 10:54:22,577 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 11:09:24,617 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 11:22:56,051 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-31 11:22:56,055 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-03-31 11:22:56,060 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-03-31 11:22:56,064 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-03-31 11:24:26,140 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 11:24:26,154 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-03-31 11:39:28,247 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+INFO:     127.0.0.1:52738 - "POST /api/tasks/3/stop HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52773 - "GET /api/tasks/3/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53131 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53134 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     Started server process [9704]
+INFO:     Waiting for application startup.
+2026-03-31 11:48:32,492 app.main INFO Database ready
+2026-03-31 11:48:32,502 app.core.rclone_daemon INFO Starting rclone daemon on port 5573...
+2026-03-31 11:48:32,935 app.core.rclone_daemon INFO rclone daemon is ready
+2026-03-31 11:48:32,936 app.services.progress_monitor INFO Progress monitor started
+2026-03-31 11:48:32,936 app.services.scheduler INFO Scheduler started
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+2026-03-31 11:48:37,952 app.services.scheduler INFO Scheduler loop started
+INFO:     127.0.0.1:53146 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53149 - "GET /api/tasks/3/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53150 - "POST /api/tasks/3/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53273 - "GET /api/tasks/3/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53757 - "GET /api/tasks/3/status HTTP/1.1" 200 OK
+2026-03-31 11:53:08,051 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-03-31 11:54:38,622 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 12:09:39,792 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 12:23:10,575 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-03-31 12:23:11,114 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-03-31 12:23:11,119 app.services.scheduler INFO Scheduled run: task 4 (Sync _PROJECTS)
+2026-03-31 12:24:41,864 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 12:39:42,677 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 12:53:13,530 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-31 12:54:43,622 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 13:09:44,535 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+INFO:     Started server process [6372]
+INFO:     Waiting for application startup.
+2026-03-31 13:23:14,147 app.main INFO Database ready
+2026-03-31 13:23:14,226 app.main INFO Cleaned up 3 stale running execution(s)
+2026-03-31 13:23:14,226 app.core.rclone_daemon INFO Starting rclone daemon on port 5573...
+2026-03-31 13:23:15,300 app.core.rclone_daemon INFO rclone daemon is ready
+2026-03-31 13:23:15,300 app.services.progress_monitor INFO Progress monitor started
+2026-03-31 13:23:15,300 app.services.scheduler INFO Scheduler started
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+2026-03-31 13:23:20,308 app.services.scheduler INFO Scheduler loop started
+2026-03-31 13:23:20,317 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-03-31 13:23:20,872 app.services.scheduler INFO Scheduled run: task 3 (Sync _INVOICES)
+2026-03-31 13:23:21,513 app.services.scheduler INFO Scheduled run: task 4 (Sync _PROJECTS)
+2026-03-31 13:23:21,986 app.services.scheduler INFO Scheduled run: task 5 (Sync Pictures)
+INFO:     127.0.0.1:49834 - "GET /api/health HTTP/1.1" 200 OK
+2026-03-31 13:24:52,500 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 13:24:52,522 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-03-31 13:24:57,696 app.services.sync_engine ERROR Bisync failed for task 8: bisync failed: 2026/03/31 13:24:57 CRITICAL: Failed to create file system for "onedrive:Документы": failed to get root: Get "https://graph.microsoft.com/v1.0/drives/FD7E41C2149AE235/root": couldn't fetch token: Post "https://login.microsoftonline.com/common/oauth2/v2.0/token": dial tcp: lookup login.microsoftonline.com: no such host
+
+2026-03-31 13:24:57,697 app.services.sync_engine ERROR Bisync failed for task 6: bisync failed: 2026/03/31 13:24:57 CRITICAL: Failed to create file system for "onedrive:KEYS/DSKEYS": failed to get root: Get "https://graph.microsoft.com/v1.0/drives/FD7E41C2149AE235/root": couldn't fetch token: Post "https://login.microsoftonline.com/common/oauth2/v2.0/token": dial tcp: lookup login.microsoftonline.com: no such host
+
+2026-03-31 13:39:52,795 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 13:53:23,094 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-03-31 13:54:53,585 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 14:09:53,936 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 14:23:24,223 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-03-31 14:23:24,707 app.services.scheduler INFO Scheduled run: task 3 (Sync _INVOICES)
+2026-03-31 14:23:25,194 app.services.scheduler INFO Scheduled run: task 4 (Sync _PROJECTS)
+2026-03-31 14:24:55,724 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 14:39:56,659 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 14:53:27,041 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-03-31 14:54:57,655 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+INFO:     127.0.0.1:62949 - "GET /api/health HTTP/1.1" 200 OK
+2026-03-31 15:09:58,534 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 15:23:29,945 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-03-31 15:23:29,951 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-03-31 15:23:29,955 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-03-31 15:23:29,959 app.services.scheduler INFO Scheduled run: task 5 (Sync Pictures)
+2026-03-31 15:25:00,711 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-03-31 15:25:00,725 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+INFO:     Started server process [9232]
+INFO:     Waiting for application startup.
+2026-04-01 02:08:03,244 app.main INFO Database ready
+2026-04-01 02:08:03,259 app.main INFO Cleaned up 4 stale running execution(s)
+2026-04-01 02:08:03,259 app.core.rclone_daemon INFO Starting rclone daemon on port 5573...
+2026-04-01 02:08:11,140 app.core.rclone_daemon INFO rclone daemon is ready
+2026-04-01 02:08:11,140 app.services.progress_monitor INFO Progress monitor started
+2026-04-01 02:08:11,140 app.services.scheduler INFO Scheduler started
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+2026-04-01 02:08:16,150 app.services.scheduler INFO Scheduler loop started
+2026-04-01 02:08:16,157 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-04-01 02:08:16,629 app.services.scheduler INFO Scheduled run: task 3 (Sync _INVOICES)
+2026-04-01 02:08:17,096 app.services.scheduler INFO Scheduled run: task 4 (Sync _PROJECTS)
+2026-04-01 02:08:17,571 app.services.scheduler INFO Scheduled run: task 5 (Sync Pictures)
+2026-04-01 02:08:18,044 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 02:08:18,072 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+INFO:     127.0.0.1:49939 - "GET /api/health HTTP/1.1" 200 OK
+2026-04-01 02:23:19,027 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 02:38:19,987 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-04-01 02:38:20,463 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 02:53:21,226 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 03:08:22,459 app.services.scheduler INFO Scheduled run: task 2 (Sync _DATA)
+2026-04-01 03:08:22,970 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-01 03:08:22,976 app.services.scheduler INFO Scheduled run: task 4 (Sync _PROJECTS)
+2026-04-01 03:08:23,642 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 03:23:24,936 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 03:38:26,363 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 03:38:26,367 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 03:53:27,537 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 04:08:28,515 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 04:08:28,529 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-01 04:08:28,535 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-01 04:08:28,541 app.services.scheduler INFO Scheduled run: task 5 (Sync Pictures)
+2026-04-01 04:08:29,171 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 04:08:29,236 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-01 04:23:31,870 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 04:38:34,088 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 04:38:34,105 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 04:53:36,767 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 05:08:39,849 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 05:08:39,865 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-01 05:08:39,870 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-01 05:08:39,874 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 05:23:42,623 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 05:38:47,333 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 05:38:47,350 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 05:53:50,448 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 06:08:22,701 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 06:08:22,707 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-01 06:08:22,712 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-01 06:08:52,723 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-01 06:08:52,728 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 06:08:52,747 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-01 06:23:55,039 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 06:38:28,391 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 06:38:58,418 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 06:53:59,983 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 07:08:31,842 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 07:08:31,854 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-01 07:08:31,857 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-01 07:09:01,872 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 07:24:03,273 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 07:38:34,783 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 07:39:04,809 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 07:54:05,539 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 08:08:36,815 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 08:08:36,833 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-01 08:08:36,839 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-01 08:08:36,843 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-01 08:09:06,855 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 08:09:06,880 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-01 08:24:09,654 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 08:38:40,832 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 08:39:11,085 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 08:54:13,433 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 09:08:45,221 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 09:08:45,235 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-01 09:08:45,240 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-01 09:09:15,249 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 09:24:18,127 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 09:38:49,320 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 09:39:19,364 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 09:54:20,862 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 10:08:22,252 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-01 10:08:52,542 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 10:08:52,547 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-01 10:08:52,553 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-01 10:09:22,619 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 10:09:22,648 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-01 10:24:24,961 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 10:38:27,005 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 10:39:27,050 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 10:54:29,290 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 11:08:31,447 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 11:08:31,458 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-01 11:08:31,462 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-01 11:09:31,477 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 11:24:33,314 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 11:38:35,099 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 11:39:35,193 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 11:54:36,620 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 12:08:37,831 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 12:08:37,846 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-01 12:08:37,850 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-01 12:08:37,854 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-01 12:09:37,886 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 12:09:37,912 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-01 12:24:39,320 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 12:38:40,849 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 12:39:40,888 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 12:54:42,671 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 13:08:44,100 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 13:08:44,134 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-01 13:08:44,138 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-01 13:09:44,154 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 13:24:46,052 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 13:38:47,704 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 13:39:47,824 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 13:54:49,996 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 14:08:21,787 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+INFO:     127.0.0.1:61346 - "GET /api/health HTTP/1.1" 200 OK
+2026-04-01 14:08:51,813 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 14:08:51,818 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-01 14:08:51,822 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-01 14:09:51,855 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 14:09:51,882 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-01 14:24:53,713 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 14:38:25,040 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 14:39:55,080 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 14:54:58,235 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 15:08:29,254 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 15:08:29,284 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-01 15:08:29,289 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-01 15:09:59,455 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 15:25:01,571 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 15:38:33,757 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 15:40:04,245 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 15:55:05,658 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 16:08:37,745 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 16:08:37,764 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-01 16:08:37,769 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-01 16:08:37,774 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-01 16:10:07,802 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 16:10:07,834 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-01 16:25:09,840 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 16:38:41,953 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 16:40:12,006 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 16:55:13,601 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 17:08:45,321 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 17:08:45,368 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-01 17:08:45,373 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-01 17:10:15,436 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 17:25:17,557 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 17:38:48,627 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 17:40:18,812 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 17:55:20,364 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 18:08:21,283 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-01 18:08:51,330 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 18:08:51,336 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-01 18:08:51,342 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-01 18:10:21,378 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 18:10:21,426 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-01 18:25:22,251 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 18:38:24,124 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 18:40:24,178 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 18:55:25,242 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 19:08:26,107 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 19:08:26,120 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-01 19:08:26,124 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-01 19:10:26,246 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 19:25:27,847 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 19:38:29,647 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 19:40:29,958 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 19:55:31,778 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 20:08:33,364 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 20:08:33,382 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-01 20:08:33,387 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-01 20:08:33,392 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-01 20:10:33,922 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 20:10:33,957 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-01 20:25:35,868 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 20:38:37,631 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 20:40:38,101 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 20:55:40,378 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 21:08:41,634 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 21:08:41,652 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-01 21:08:41,657 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-01 21:10:41,804 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 21:25:43,985 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 21:38:45,838 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 21:40:46,303 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 21:55:48,636 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 22:08:20,252 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-01 22:08:50,292 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 22:08:50,298 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-01 22:08:50,304 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-01 22:10:50,359 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 22:10:50,671 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-01 22:25:52,282 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 22:38:24,278 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 22:40:54,460 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 22:55:56,464 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 23:08:27,774 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 23:08:27,791 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-01 23:08:27,797 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-01 23:10:58,259 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 23:26:01,125 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 23:38:33,238 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-01 23:41:03,670 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-01 23:56:04,789 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 00:08:35,879 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 00:08:35,884 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-02 00:08:35,888 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-02 00:08:35,892 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-02 00:11:06,158 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 00:11:06,177 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-02 00:26:08,377 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 00:38:40,590 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 00:41:11,249 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 00:56:12,883 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 01:08:45,122 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 01:08:45,129 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-02 01:08:45,136 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-02 01:11:15,744 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 01:26:18,377 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 01:38:49,934 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 01:41:20,165 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 01:56:22,334 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 02:08:26,081 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 02:08:26,088 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-02 02:08:26,094 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+INFO:     127.0.0.1:64653 - "GET /api/health HTTP/1.1" 200 OK
+2026-04-02 02:08:56,220 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-02 02:11:26,400 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 02:11:26,420 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-02 02:26:28,512 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 02:38:31,371 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 02:41:31,733 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 02:56:34,124 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 03:08:36,758 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 03:08:36,764 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-02 03:08:36,770 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-02 03:11:37,329 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 03:26:39,284 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 03:38:41,733 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 03:41:42,247 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 03:56:44,702 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 04:08:46,080 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 04:08:46,109 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-02 04:08:46,117 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-02 04:08:46,121 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-02 04:11:46,266 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 04:11:46,290 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-02 04:26:48,456 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 04:38:50,174 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 04:41:50,846 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 04:56:53,233 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 05:08:24,897 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 05:08:24,903 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-02 05:08:24,910 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-02 05:11:55,364 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 05:26:56,967 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 05:38:27,999 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 05:41:58,647 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 05:57:00,651 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 06:08:31,301 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 06:08:31,306 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-02 06:08:31,309 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-02 06:08:31,313 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-02 06:12:01,665 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 06:12:01,700 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-02 06:27:03,482 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 06:38:35,130 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 06:42:05,660 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 06:57:06,783 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 07:08:37,831 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 07:08:37,848 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-02 07:08:37,852 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-02 07:12:07,966 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 07:27:09,319 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 07:38:40,182 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 07:42:11,256 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 07:57:12,337 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 08:08:43,676 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 08:08:43,693 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-02 08:08:43,697 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-02 08:08:43,702 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-02 08:12:14,458 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 08:12:14,487 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-02 08:27:15,721 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 08:38:47,228 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 08:42:17,514 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 08:57:18,826 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 09:08:20,504 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-02 09:08:50,558 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 09:08:50,562 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-02 09:12:20,941 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 09:27:21,992 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 09:38:23,554 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 09:42:24,087 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 09:57:26,100 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 10:08:26,767 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 10:08:26,782 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-02 10:08:26,786 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-02 10:08:56,794 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-02 10:12:27,202 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 10:12:27,235 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-02 10:27:29,035 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 10:38:29,704 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 10:42:30,195 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 10:57:31,813 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 11:08:32,783 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 11:08:32,798 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-02 11:08:32,802 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-02 11:12:33,172 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 11:27:34,894 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 11:38:36,369 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 11:42:36,782 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 11:57:38,703 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 12:08:40,715 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 12:08:40,729 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-02 12:08:40,733 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-02 12:08:40,737 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-02 12:12:41,083 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 12:12:41,116 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-02 12:27:43,456 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 12:38:45,087 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 12:42:45,815 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 12:57:47,887 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 13:08:19,614 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-02 13:08:49,636 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 13:08:49,640 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-02 13:12:49,992 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 13:27:52,434 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 13:38:23,604 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 13:42:54,224 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 13:57:57,203 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 14:08:28,578 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 14:08:28,592 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-02 14:08:28,596 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+INFO:     127.0.0.1:61563 - "GET /api/health HTTP/1.1" 200 OK
+2026-04-02 14:08:58,606 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-02 14:12:59,415 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 14:12:59,450 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-02 14:28:02,184 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 14:38:34,039 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 14:43:04,417 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 14:58:06,798 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 15:08:37,753 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 15:08:37,770 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-02 15:08:37,776 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-02 15:13:08,220 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 15:28:10,008 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 15:38:41,416 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 15:43:11,651 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 15:58:13,616 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 16:08:45,480 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 16:08:45,500 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-02 16:08:45,504 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-02 16:08:45,508 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-02 16:13:15,796 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 16:13:15,817 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-02 16:28:17,884 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 16:38:49,048 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 16:43:19,274 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 16:58:21,199 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 17:08:23,060 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 17:08:23,070 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-02 17:08:23,073 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-02 17:13:23,908 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 17:28:25,730 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 17:38:27,119 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 17:43:27,879 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 17:58:29,964 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 18:08:31,223 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 18:08:31,250 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-02 18:08:31,255 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-02 18:08:31,505 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-02 18:13:32,192 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 18:13:32,240 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-02 18:28:34,008 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 18:38:34,530 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 18:43:35,160 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 18:58:37,170 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 19:08:38,405 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 19:08:38,420 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-02 19:08:38,424 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-02 19:13:38,768 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 19:28:40,924 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 19:38:41,879 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 19:43:42,579 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 19:58:44,917 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 20:08:45,950 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 20:08:45,965 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-02 20:08:45,969 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-02 20:08:45,974 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-02 20:13:46,813 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 20:13:46,836 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-02 20:28:48,515 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 20:38:49,894 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 20:43:50,386 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 20:58:52,353 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 21:08:23,539 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 21:08:23,548 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-02 21:08:23,552 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-02 21:13:54,816 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 21:28:57,115 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 21:38:28,556 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 21:43:59,273 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 21:59:00,841 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 22:08:32,026 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 22:08:32,041 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-02 22:08:32,046 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-02 22:08:32,050 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-02 22:14:02,572 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 22:14:02,612 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-02 22:29:04,590 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 22:38:35,281 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 22:44:05,418 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 22:59:06,947 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 23:08:37,809 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 23:08:37,825 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-02 23:08:37,829 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-02 23:14:08,123 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 23:29:09,895 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 23:38:41,784 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-02 23:44:12,246 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-02 23:59:13,913 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 00:08:45,115 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 00:08:45,393 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-03 00:08:45,398 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-03 00:08:45,403 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-03 00:14:15,679 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 00:14:15,706 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-03 00:29:17,131 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 00:38:48,926 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 00:44:19,365 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 00:59:21,016 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 01:08:22,232 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-03 01:08:52,250 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 01:08:52,255 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-03 01:14:22,460 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 01:29:25,051 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 01:38:27,024 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 01:44:27,700 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 01:59:29,754 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 02:08:30,760 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 02:08:30,776 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-03 02:08:30,780 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-03 02:08:30,784 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+INFO:     127.0.0.1:50131 - "GET /api/health HTTP/1.1" 200 OK
+2026-04-03 02:14:31,716 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 02:14:31,779 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-03 02:29:33,738 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 02:38:34,582 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 02:44:35,915 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 02:59:39,540 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 03:08:41,250 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 03:08:41,290 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-03 03:08:41,295 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-03 03:14:42,105 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 03:29:44,418 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 03:38:45,518 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 03:44:46,073 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 03:59:48,374 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 04:08:19,735 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-03 04:08:49,904 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 04:08:49,908 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-03 04:08:49,912 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-03 04:14:50,944 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 04:14:50,999 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-03 04:29:52,587 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 04:38:24,234 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 04:44:55,055 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 04:59:56,919 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 05:08:28,874 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 05:08:28,893 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-03 05:08:28,898 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-03 05:14:59,800 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 05:30:01,545 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 05:38:32,557 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 05:45:03,252 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 06:00:06,385 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 06:08:37,466 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 06:08:37,480 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-03 06:08:37,484 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-03 06:08:37,488 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-03 06:15:09,625 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 06:15:09,697 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-03 06:30:11,573 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 06:38:42,623 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 06:45:14,553 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 07:00:16,643 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 07:08:18,143 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-03 07:08:48,167 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 07:08:48,172 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-03 07:15:18,876 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 07:30:20,668 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 07:38:52,361 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 07:45:23,662 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 08:00:25,556 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 08:08:26,499 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 08:08:26,754 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-03 08:08:26,759 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-03 08:08:56,777 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-03 08:15:28,169 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 08:15:28,191 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-03 08:30:29,647 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 08:38:30,594 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 08:45:31,657 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 09:00:35,172 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 09:08:36,216 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 09:08:36,227 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-03 09:08:36,231 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-03 09:15:37,088 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 09:30:38,658 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 09:38:39,814 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 09:45:41,079 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 10:00:43,782 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 10:08:45,352 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 10:08:45,374 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-03 10:08:45,378 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-03 10:08:45,381 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-03 10:15:46,528 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 10:15:46,579 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-03 10:30:48,502 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 10:38:49,460 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 10:45:50,390 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 11:00:52,687 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 11:08:25,360 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 11:08:25,374 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-03 11:08:25,378 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-03 11:15:56,545 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 11:30:58,461 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 11:38:29,570 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 11:45:59,966 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 12:01:02,220 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 12:08:32,914 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 12:08:32,937 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-03 12:08:32,942 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-03 12:08:32,946 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-03 12:16:03,691 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 12:16:03,715 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-03 12:31:05,401 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 12:38:36,205 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 12:46:07,195 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 13:01:09,134 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 13:08:40,091 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 13:08:40,100 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-03 13:08:40,104 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-03 13:16:10,832 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 13:31:12,568 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 13:38:43,539 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 13:46:14,739 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 14:01:17,019 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 14:08:17,835 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-03 14:08:48,127 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 14:08:48,133 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-03 14:08:48,138 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+INFO:     127.0.0.1:58557 - "GET /api/health HTTP/1.1" 200 OK
+2026-04-03 14:16:19,171 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 14:16:19,206 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-03 14:31:21,254 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 14:38:22,659 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 14:46:23,552 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 15:01:25,587 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 15:08:26,719 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 15:08:26,735 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-03 15:08:26,738 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-03 15:16:27,430 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 15:31:29,411 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 15:38:29,924 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 15:46:30,916 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 16:01:32,112 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 16:08:33,326 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 16:08:33,652 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-03 16:08:33,658 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-03 16:08:33,664 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-03 16:16:34,099 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 16:16:34,123 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-03 16:31:35,497 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 16:38:36,582 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 16:46:37,734 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 17:01:39,342 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 17:08:40,152 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 17:08:40,162 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-03 17:08:40,166 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-03 17:16:40,947 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 17:31:42,094 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 17:38:42,799 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 17:46:43,776 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 18:01:45,286 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 18:08:46,076 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 18:08:46,125 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-03 18:08:46,132 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-03 18:08:46,139 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-03 18:16:46,862 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 18:16:46,936 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-03 18:31:48,481 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 18:38:49,269 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 18:46:50,413 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 19:01:52,598 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 19:08:23,161 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 19:08:23,167 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-03 19:08:23,172 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-03 19:16:54,364 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 19:31:55,841 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 19:38:26,644 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 19:46:57,527 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 20:02:00,023 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 20:08:31,148 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 20:08:31,153 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-03 20:08:31,157 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-03 20:08:31,160 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-03 20:17:02,319 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 20:17:02,365 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-03 20:32:03,172 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 20:38:33,980 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 20:47:05,408 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 21:02:07,614 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 21:08:39,281 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 21:08:39,295 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-03 21:08:39,299 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-03 21:17:10,377 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 21:32:12,092 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 21:38:42,826 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 21:47:14,041 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 22:02:15,095 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 22:08:45,830 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 22:08:45,847 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-03 22:08:45,852 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-03 22:08:45,857 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-03 22:17:17,007 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 22:17:17,041 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-03 22:32:18,315 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 22:35:24,447 app.services.sync_engine ERROR Bisync failed for task 6: bisync failed: 2026/04/03 22:35:24 CRITICAL: Failed to create file system for "onedrive:KEYS/DSKEYS": failed to get root: serviceNotAvailable: Service unavailable: trying again in 19s
+
+2026-04-03 22:38:49,062 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 22:47:20,463 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 23:02:22,220 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 23:08:23,108 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 23:08:23,125 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-03 23:08:23,130 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-03 23:17:24,530 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 23:32:26,276 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-03 23:38:27,099 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-03 23:47:28,146 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 00:02:29,735 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 00:08:30,992 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 00:08:31,008 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-04 00:08:31,013 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-04 00:08:31,018 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-04 00:17:32,583 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 00:17:32,604 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-04 00:32:34,973 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 00:38:36,174 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 00:47:37,385 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 01:02:38,830 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 01:08:39,752 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 01:08:39,768 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-04 01:08:39,772 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-04 01:17:40,892 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 01:32:43,220 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 01:38:43,705 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 01:47:44,726 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 02:02:46,855 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 02:08:17,553 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-04 02:08:47,583 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 02:08:47,590 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-04 02:08:47,597 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-04 02:17:51,776 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 02:17:51,865 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-04 02:32:54,237 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 02:38:25,080 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 02:47:56,095 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 03:02:57,133 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 03:08:27,621 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 03:08:27,639 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-04 03:08:27,645 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-04 03:17:59,328 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 03:33:01,385 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 03:38:32,331 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 03:48:04,454 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 04:03:05,726 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 04:08:36,254 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 04:08:36,268 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-04 04:08:36,273 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-04 04:08:36,278 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-04 04:18:07,272 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 04:18:07,301 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-04 04:33:09,303 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 04:38:40,295 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 04:48:11,769 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 05:03:13,093 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 05:08:43,558 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 05:08:43,573 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-04 05:08:43,577 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-04 05:18:14,477 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 05:33:15,939 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 05:38:46,852 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 05:48:17,995 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 06:03:21,074 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 06:08:22,205 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-04 06:08:52,234 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 06:08:52,240 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-04 06:08:52,245 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-04 06:18:23,541 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 06:18:23,583 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-04 06:33:25,441 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 06:38:26,141 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 06:48:28,922 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 07:03:31,826 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 07:08:32,631 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 07:08:32,646 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-04 07:08:32,651 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-04 07:18:33,559 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 07:33:35,255 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 07:38:35,741 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 07:48:36,392 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 08:03:38,828 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 08:08:39,234 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 08:08:39,248 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-04 08:08:39,252 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-04 08:08:39,257 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-04 08:18:40,132 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 08:18:40,193 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-04 08:33:42,064 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 08:38:42,387 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 08:48:43,330 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 09:03:45,282 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 09:08:16,215 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-04 09:08:46,249 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 09:08:46,255 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-04 09:18:47,203 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 09:33:49,392 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 09:38:50,331 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 09:48:51,260 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 10:03:52,987 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 10:08:23,744 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 10:08:23,764 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-04 10:08:23,768 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-04 10:08:53,784 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-04 10:18:54,965 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 10:18:55,228 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-04 10:33:56,891 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 10:38:27,305 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 10:48:58,131 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 11:03:59,107 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 11:08:29,754 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 11:08:29,767 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-04 11:08:29,771 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-04 11:19:02,850 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 11:34:04,865 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 11:38:35,703 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 11:49:06,922 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 12:04:08,461 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 12:08:39,015 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 12:08:39,031 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-04 12:08:39,035 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-04 12:08:39,039 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-04 12:19:09,671 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 12:19:09,705 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-04 12:34:11,548 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 12:38:42,091 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 12:49:13,198 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 13:04:14,633 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 13:08:45,739 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 13:08:45,760 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-04 13:08:45,765 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-04 13:19:16,938 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 13:34:19,234 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 13:38:49,640 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 13:49:20,253 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 14:04:22,039 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 14:08:22,236 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-04 14:08:52,539 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 14:08:52,544 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-04 14:08:52,547 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-04 14:19:24,358 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 14:19:24,666 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-04 14:34:26,356 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 14:38:26,962 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 14:49:27,953 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 15:04:29,637 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 15:08:29,845 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 15:08:29,859 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-04 15:08:29,863 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-04 15:19:31,703 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 15:34:34,349 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 15:38:35,487 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 15:49:36,325 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 16:04:39,564 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 16:08:39,970 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 16:08:39,981 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-04 16:08:39,986 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-04 16:08:39,992 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-04 16:19:41,330 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 16:19:41,371 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-04 16:34:43,102 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 16:38:43,725 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 16:49:46,201 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 17:04:47,883 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 17:08:18,650 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-04 17:08:48,858 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 17:08:48,864 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-04 17:19:49,921 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 17:34:53,213 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 17:38:23,664 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 17:49:54,644 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 18:04:56,773 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 18:08:27,474 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 18:08:27,500 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-04 18:08:27,505 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-04 18:08:57,524 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-04 18:19:58,659 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 18:19:58,698 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-04 18:35:00,022 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 18:38:30,675 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 18:50:02,870 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 19:05:04,815 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 19:08:35,233 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 19:08:35,238 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-04 19:08:35,242 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-04 19:20:07,122 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 19:35:09,157 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 19:38:39,964 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 19:50:11,825 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 20:05:12,553 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 20:08:42,676 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 20:08:42,682 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-04 20:08:42,689 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-04 20:08:42,697 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-04 20:20:14,024 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 20:20:14,066 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-04 20:35:15,282 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 20:38:45,460 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 20:50:16,052 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 21:05:19,992 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 21:08:20,655 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-04 21:08:50,664 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 21:08:50,671 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-04 21:20:22,472 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 21:35:23,890 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 21:38:24,360 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 21:50:25,957 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 22:05:27,449 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 22:08:27,856 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 22:08:28,131 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-04 22:08:28,139 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-04 22:08:58,152 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-04 22:20:33,860 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 22:20:33,910 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-04 22:35:36,881 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 22:38:37,244 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 22:50:39,401 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 23:05:41,545 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 23:08:42,144 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 23:08:42,153 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-04 23:08:42,190 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-04 23:20:43,450 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 23:35:45,352 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-04 23:38:45,666 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-04 23:50:47,323 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 00:05:49,932 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 00:08:20,800 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-05 00:08:50,819 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 00:08:50,825 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-05 00:08:50,832 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-05 00:20:52,039 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 00:20:52,083 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-05 00:35:55,073 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 00:38:25,143 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 00:50:57,326 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 01:05:58,889 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 01:08:29,104 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 01:08:29,109 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-05 01:08:29,114 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-05 01:21:00,231 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 01:36:01,906 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 01:38:32,162 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 01:51:04,333 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 02:06:06,492 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 02:08:37,033 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 02:08:37,042 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-05 02:08:37,048 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-05 02:08:37,054 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-05 02:21:09,619 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 02:21:09,687 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-05 02:36:14,124 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 02:38:44,788 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 02:51:16,365 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 03:06:22,486 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 03:08:22,618 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 03:08:22,623 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-05 03:08:22,629 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-05 03:21:24,678 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 03:36:27,994 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 03:38:28,752 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 03:51:31,367 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 04:06:58,853 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 04:08:29,542 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 04:08:29,547 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-05 04:08:29,552 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-05 04:08:29,557 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-05 04:21:31,501 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-05 04:22:01,808 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 04:22:01,820 app.services.rclone_client INFO Removed stale bisync lock file: C:\Users\xtech\AppData\Local\rclone\bisync\onedrive_Документы..F__Документы.lck
+2026-04-05 04:24:16,897 app.services.rclone_client WARNING Bisync completed but failed to remove lock file (non-critical): ed time:      2m41.5s
+
+2026/04/05 04:24:16 NOTICE: Failed to bisync: remove C:\Users\xtech\AppData\Local\rclone\bisync\onedrive_Документы..F__Документы.lck: The system cannot find the file specified.
+
+2026-04-05 04:37:05,126 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 04:38:35,309 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 04:52:07,125 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 05:07:08,954 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 05:08:39,036 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 05:08:39,040 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-05 05:08:39,044 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-05 05:22:10,508 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 05:37:12,690 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 05:38:43,082 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 05:52:15,085 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 06:07:17,556 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 06:08:17,597 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-05 06:08:47,698 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 06:08:47,703 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-05 06:08:47,707 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-05 06:21:49,074 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-05 06:22:19,157 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 06:22:19,169 app.services.rclone_client INFO Removed stale bisync lock file: C:\Users\xtech\AppData\Local\rclone\bisync\onedrive_Документы..F__Документы.lck
+2026-04-05 06:25:54,546 app.services.rclone_client WARNING Bisync completed but failed to remove lock file (non-critical): ed time:       4m2.3s
+
+2026/04/05 06:25:54 NOTICE: Failed to bisync: remove C:\Users\xtech\AppData\Local\rclone\bisync\onedrive_Документы..F__Документы.lck: The system cannot find the file specified.
+
+2026-04-05 06:37:21,370 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 06:38:51,425 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 06:52:23,099 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 07:07:24,045 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 07:08:24,167 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 07:08:24,173 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-05 07:08:24,177 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-05 07:22:26,876 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 07:37:28,751 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 07:38:29,217 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 07:52:30,847 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 08:07:32,253 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 08:08:32,359 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 08:08:32,364 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-05 08:08:32,369 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-05 08:08:32,373 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-05 08:22:03,877 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-05 08:22:33,923 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 08:22:33,931 app.services.rclone_client INFO Removed stale bisync lock file: C:\Users\xtech\AppData\Local\rclone\bisync\onedrive_Документы..F__Документы.lck
+2026-04-05 08:25:56,281 app.services.rclone_client WARNING Bisync completed but failed to remove lock file (non-critical): ed time:      3m49.3s
+
+2026/04/05 08:25:56 NOTICE: Failed to bisync: remove C:\Users\xtech\AppData\Local\rclone\bisync\onedrive_Документы..F__Документы.lck: The system cannot find the file specified.
+
+2026-04-05 08:37:35,797 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 08:38:36,235 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 08:52:38,258 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 09:07:40,428 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 09:08:40,531 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 09:08:40,535 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-05 09:08:40,539 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-05 09:22:41,484 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 09:37:42,624 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 09:38:42,698 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 09:52:43,787 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 10:07:46,115 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 10:08:46,166 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 10:08:46,171 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-05 10:08:46,176 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-05 10:08:46,181 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-05 10:22:18,045 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-05 10:22:48,136 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 10:22:48,145 app.services.rclone_client INFO Removed stale bisync lock file: C:\Users\xtech\AppData\Local\rclone\bisync\onedrive_Документы..F__Документы.lck
+2026-04-05 10:25:59,082 app.services.rclone_client WARNING Bisync completed but failed to remove lock file (non-critical): ed time:      3m38.4s
+
+2026/04/05 10:25:58 NOTICE: Failed to bisync: remove C:\Users\xtech\AppData\Local\rclone\bisync\onedrive_Документы..F__Документы.lck: The system cannot find the file specified.
+
+2026-04-05 10:37:50,820 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 10:38:51,022 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 10:52:52,208 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 11:07:53,374 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 11:08:23,811 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 11:08:23,817 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-05 11:08:23,821 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-05 11:22:55,443 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 11:37:57,889 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 11:38:28,024 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 11:53:00,331 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 12:08:02,038 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 12:08:32,149 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 12:08:32,153 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-05 12:08:32,157 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-05 12:08:32,161 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-05 12:22:33,152 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-05 12:23:03,201 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 12:23:03,210 app.services.rclone_client INFO Removed stale bisync lock file: C:\Users\xtech\AppData\Local\rclone\bisync\onedrive_Документы..F__Документы.lck
+2026-04-05 12:26:32,732 app.services.rclone_client WARNING Bisync completed but failed to remove lock file (non-critical): ed time:      3m56.4s
+
+2026/04/05 12:26:32 NOTICE: Failed to bisync: remove C:\Users\xtech\AppData\Local\rclone\bisync\onedrive_Документы..F__Документы.lck: The system cannot find the file specified.
+
+2026-04-05 12:38:05,975 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 12:38:36,087 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 12:53:07,465 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 13:08:08,596 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 13:08:38,652 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 13:08:38,657 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-05 13:08:38,662 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-05 13:23:10,042 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 13:38:12,431 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 13:38:42,644 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 13:53:14,905 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 14:08:16,156 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 14:08:46,646 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 14:08:46,651 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-05 14:08:46,655 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-05 14:08:46,659 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-05 14:22:48,411 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-05 14:23:18,496 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 14:23:18,504 app.services.rclone_client INFO Removed stale bisync lock file: C:\Users\xtech\AppData\Local\rclone\bisync\onedrive_Документы..F__Документы.lck
+2026-04-05 14:25:36,358 app.services.rclone_client WARNING Bisync completed but failed to remove lock file (non-critical): ed time:      2m45.5s
+
+2026/04/05 14:25:36 NOTICE: Failed to bisync: remove C:\Users\xtech\AppData\Local\rclone\bisync\onedrive_Документы..F__Документы.lck: The system cannot find the file specified.
+
+2026-04-05 14:38:20,622 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 14:38:50,716 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 14:53:21,930 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 15:08:23,928 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 15:08:23,969 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-05 15:08:23,973 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-05 15:08:23,977 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 15:23:25,434 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 15:38:29,134 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 15:38:29,170 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 15:53:31,384 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 15:53:31,401 app.services.sync_engine ERROR Bisync failed for task 6: [WinError 2] Не удается найти указанный файл
+2026-04-05 16:08:33,004 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 16:08:33,033 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-05 16:08:33,039 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-05 16:08:33,044 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-05 16:08:33,049 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 16:08:33,085 app.services.sync_engine ERROR Bisync failed for task 6: [WinError 2] Не удается найти указанный файл
+2026-04-05 16:23:04,676 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-05 16:23:04,695 app.services.sync_engine ERROR Bisync failed for task 8: [WinError 2] Не удается найти указанный файл
+2026-04-05 16:23:34,730 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 16:23:34,740 app.services.sync_engine ERROR Bisync failed for task 6: [WinError 2] Не удается найти указанный файл
+2026-04-05 16:38:38,240 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 16:38:38,256 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 16:38:38,278 app.services.sync_engine ERROR Bisync failed for task 6: [WinError 2] Не удается найти указанный файл
+2026-04-05 16:53:40,542 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 16:53:40,617 app.services.sync_engine ERROR Bisync failed for task 6: [WinError 2] Не удается найти указанный файл
+2026-04-05 17:08:42,791 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 17:08:42,893 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-05 17:08:42,898 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-05 17:08:42,903 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 17:08:42,998 app.services.sync_engine ERROR Bisync failed for task 6: [WinError 2] Не удается найти указанный файл
+2026-04-05 17:23:45,168 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 17:23:45,367 app.services.sync_engine ERROR Bisync failed for task 6: [WinError 2] Не удается найти указанный файл
+2026-04-05 17:38:46,633 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 17:38:46,871 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 17:38:47,282 app.services.sync_engine ERROR Bisync failed for task 6: [WinError 2] Не удается найти указанный файл
+2026-04-05 17:53:49,385 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 17:53:49,395 app.services.sync_engine ERROR Bisync failed for task 6: [WinError 2] Не удается найти указанный файл
+2026-04-05 18:08:20,789 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-05 18:08:50,800 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 18:08:50,806 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-05 18:08:50,812 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-05 18:08:50,818 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 18:08:50,828 app.services.sync_engine ERROR Bisync failed for task 6: [WinError 2] Не удается найти указанный файл
+2026-04-05 18:23:22,435 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-05 18:23:22,446 app.services.sync_engine ERROR Bisync failed for task 8: [WinError 2] Не удается найти указанный файл
+2026-04-05 18:23:52,458 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 18:23:52,467 app.services.sync_engine ERROR Bisync failed for task 6: [WinError 2] Не удается найти указанный файл
+2026-04-05 18:38:23,695 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 18:38:53,713 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 18:38:53,723 app.services.sync_engine ERROR Bisync failed for task 6: [WinError 2] Не удается найти указанный файл
+2026-04-05 18:53:55,390 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 18:53:55,422 app.services.sync_engine ERROR Bisync failed for task 6: [WinError 2] Не удается найти указанный файл
+2026-04-05 19:08:27,191 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 19:08:27,219 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-05 19:08:27,224 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-05 19:08:57,430 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 19:08:57,462 app.services.sync_engine ERROR Bisync failed for task 6: [WinError 2] Не удается найти указанный файл
+2026-04-05 19:24:22,078 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 19:24:24,920 app.services.sync_engine ERROR Bisync failed for task 6: [WinError 2] Не удается найти указанный файл
+2026-04-05 19:38:45,657 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 19:39:19,561 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 19:39:20,015 app.services.sync_engine ERROR Bisync failed for task 6: [WinError 2] Не удается найти указанный файл
+2026-04-05 19:54:37,372 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 19:54:37,401 app.services.sync_engine ERROR Bisync failed for task 6: [WinError 2] Не удается найти указанный файл
+2026-04-05 20:08:38,834 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 20:08:38,841 app.services.scheduler INFO Task 3 (Sync _INVOICES) already running, skipping scheduled run
+2026-04-05 20:08:38,847 app.services.scheduler INFO Task 4 (Sync _PROJECTS) already running, skipping scheduled run
+2026-04-05 20:08:38,851 app.services.scheduler INFO Task 5 (Sync Pictures) already running, skipping scheduled run
+2026-04-05 20:09:38,961 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 20:09:38,972 app.services.sync_engine ERROR Bisync failed for task 6: [WinError 2] Не удается найти указанный файл
+2026-04-05 20:23:41,049 app.services.scheduler INFO Scheduled run: task 8 (Sync Документы)
+2026-04-05 20:23:41,058 app.services.sync_engine ERROR Bisync failed for task 8: [WinError 2] Не удается найти указанный файл
+2026-04-05 20:24:41,081 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 20:24:41,090 app.services.sync_engine ERROR Bisync failed for task 6: [WinError 2] Не удается найти указанный файл
+INFO:     127.0.0.1:58085 - "GET /api/health HTTP/1.1" 200 OK
+2026-04-05 20:38:42,887 app.services.scheduler INFO Task 2 (Sync _DATA) already running, skipping scheduled run
+2026-04-05 20:39:42,903 app.services.scheduler INFO Scheduled run: task 6 (Sync DSKEYS)
+2026-04-05 20:39:42,913 app.services.sync_engine ERROR Bisync failed for task 6: [WinError 2] Не удается найти указанный файл
+INFO:     127.0.0.1:59125 - "WebSocket /api/ws/progress" [accepted]
+2026-04-05 20:42:29,548 app.services.ws_manager INFO WebSocket connected, total: 1
+INFO:     connection open
+INFO:     127.0.0.1:59127 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59126 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59126 - "GET /api/remotes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59126 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59212 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59212 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59221 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59212 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59212 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59267 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59305 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59340 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59377 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59417 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59544 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59755 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59880 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59880 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59961 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59999 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60011 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60039 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60076 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60085 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60216 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60453 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60604 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60607 - "GET /api/stats/summary HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60608 - "GET /api/notifications/settings HTTP/1.1" 404 Not Found
