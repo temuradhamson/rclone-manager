@@ -64,9 +64,10 @@ async def _monitor_loop():
                             if error:
                                 execution.error_message = error
 
-                            # Get final stats
+                            # Get final stats for this specific job
                             try:
-                                stats = await rclone_client.get_stats()
+                                group = f"job/{execution.rclone_job_id}"
+                                stats = await rclone_client.get_stats(group=group)
                                 import json
                                 execution.stats_json = json.dumps(stats)
                                 execution.bytes_transferred = stats.get("bytes", 0)
@@ -85,22 +86,23 @@ async def _monitor_loop():
                                 "error": error or None,
                             })
                         else:
-                            # Broadcast progress
+                            # Broadcast progress per job using group stats
                             try:
-                                stats = await rclone_client.get_stats()
+                                group = f"job/{execution.rclone_job_id}"
+                                stats = await rclone_client.get_stats(group=group)
+                                total_bytes = stats.get("totalBytes", 0)
+                                done_bytes = stats.get("bytes", 0)
+                                pct = round(done_bytes / total_bytes * 100) if total_bytes > 0 else 0
                                 await ws_manager.broadcast({
                                     "type": "progress",
                                     "task_id": execution.task_id,
                                     "execution_id": execution.id,
                                     "data": {
-                                        "bytes": stats.get("bytes", 0),
-                                        "totalBytes": stats.get("totalBytes", 0),
+                                        "bytes": done_bytes,
+                                        "totalBytes": total_bytes,
                                         "speed": stats.get("speed", 0),
                                         "eta": stats.get("eta", 0),
-                                        "percentage": (
-                                            round(stats["bytes"] / stats["totalBytes"] * 100)
-                                            if stats.get("totalBytes", 0) > 0 else 0
-                                        ),
+                                        "percentage": pct,
                                         "checks": stats.get("checks", 0),
                                         "transfers": stats.get("transfers", 0),
                                         "transferring": stats.get("transferring", []),
