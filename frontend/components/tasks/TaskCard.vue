@@ -52,11 +52,53 @@
       <span class="text-gray-400 truncate max-w-[40%]">{{ task.dst_path }}</span>
     </div>
 
-    <!-- Mode badge -->
-    <div class="mt-2 flex items-center gap-2">
+    <!-- Mode badge + schedule -->
+    <div class="mt-2 flex items-center gap-2 flex-wrap">
       <span class="px-2 py-0.5 bg-blue-900/30 text-blue-400 text-[10px] rounded-full">
         {{ modeLabel }}
       </span>
+      <span
+        v-if="schedule"
+        class="px-2 py-0.5 text-[10px] rounded-full"
+        :class="schedule.is_active ? 'bg-purple-900/30 text-purple-400' : 'bg-gray-800 text-gray-500'"
+      >
+        {{ scheduleLabel }}
+      </span>
+      <button
+        @click="showSchedule = !showSchedule"
+        class="px-2 py-0.5 bg-gray-800 text-gray-500 text-[10px] rounded-full hover:text-gray-300 transition"
+      >
+        {{ schedule ? 'Edit Schedule' : '+ Schedule' }}
+      </button>
+    </div>
+
+    <!-- Inline schedule editor -->
+    <div v-if="showSchedule" class="mt-2 p-3 bg-gray-800/50 rounded-lg border border-gray-700 space-y-2">
+      <div class="flex items-center gap-2">
+        <select v-model="schedType" class="bg-gray-800 border border-gray-700 rounded px-2 py-1 text-xs text-gray-300">
+          <option value="interval">Every N minutes</option>
+          <option value="cron">Cron expression</option>
+        </select>
+        <input
+          v-if="schedType === 'interval'"
+          v-model.number="schedInterval"
+          type="number"
+          min="1"
+          class="w-20 bg-gray-800 border border-gray-700 rounded px-2 py-1 text-xs text-gray-300"
+          placeholder="15"
+        />
+        <input
+          v-else
+          v-model="schedCron"
+          class="flex-1 bg-gray-800 border border-gray-700 rounded px-2 py-1 text-xs text-gray-300 font-mono"
+          placeholder="*/15 * * * *"
+        />
+      </div>
+      <div class="flex gap-2">
+        <button @click="saveSchedule" class="px-3 py-1 bg-blue-600 text-white rounded text-xs">Save</button>
+        <button v-if="schedule" @click="deleteSchedule" class="px-3 py-1 bg-red-600/20 text-red-400 rounded text-xs">Remove</button>
+        <button @click="showSchedule = false" class="px-3 py-1 bg-gray-700 text-gray-300 rounded text-xs">Cancel</button>
+      </div>
     </div>
 
     <!-- Progress bar when running -->
@@ -99,6 +141,67 @@ const modeLabels: Record<string, string> = {
 }
 
 const modeLabel = computed(() => modeLabels[props.task.sync_mode] || props.task.sync_mode)
+
+// Schedule
+const api = useApi()
+const schedule = ref<any>(null)
+const showSchedule = ref(false)
+const schedType = ref('interval')
+const schedInterval = ref(15)
+const schedCron = ref('*/15 * * * *')
+
+const scheduleLabel = computed(() => {
+  if (!schedule.value) return ''
+  if (schedule.value.schedule_type === 'interval') {
+    const mins = Math.round((schedule.value.interval_seconds || 900) / 60)
+    return `Every ${mins}m`
+  }
+  return schedule.value.cron_expression || 'cron'
+})
+
+async function loadSchedule() {
+  try {
+    const data = await api.get<any>(`/api/tasks/${props.task.id}/schedule`)
+    schedule.value = data
+    if (data) {
+      schedType.value = data.schedule_type || 'interval'
+      schedInterval.value = Math.round((data.interval_seconds || 900) / 60)
+      schedCron.value = data.cron_expression || '*/15 * * * *'
+    }
+  } catch {
+    schedule.value = null
+  }
+}
+
+async function saveSchedule() {
+  try {
+    const body: any = {
+      schedule_type: schedType.value,
+      is_active: true,
+    }
+    if (schedType.value === 'interval') {
+      body.interval_seconds = schedInterval.value * 60
+    } else {
+      body.cron_expression = schedCron.value
+    }
+    schedule.value = await api.put(`/api/tasks/${props.task.id}/schedule`, body)
+    showSchedule.value = false
+  } catch (e) {
+    console.error(e)
+  }
+}
+
+async function deleteSchedule() {
+  try {
+    await api.del(`/api/tasks/${props.task.id}/schedule`)
+    schedule.value = null
+    showSchedule.value = false
+  } catch (e) {
+    console.error(e)
+  }
+}
+
+onMounted(loadSchedule)
 
 function formatSpeed(bytesPerSec: number): string {
   if (bytesPerSec === 0) return ''
