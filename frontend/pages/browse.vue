@@ -7,7 +7,7 @@
 
     <div class="grid grid-cols-2 gap-3 h-[calc(100vh-170px)]">
       <!-- LEFT: Remote (Cloud) -->
-      <FilePane
+      <FilesFilePane
         title="Cloud"
         :storages="remoteStorages"
         :initial-storage="remoteStorages[0] || ''"
@@ -16,7 +16,7 @@
       />
 
       <!-- RIGHT: Local -->
-      <FilePane
+      <FilesFilePane
         title="Local"
         :storages="localStorages"
         :initial-storage="localStorages[0] || ''"
