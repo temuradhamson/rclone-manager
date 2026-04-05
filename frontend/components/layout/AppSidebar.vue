@@ -35,6 +35,9 @@ import {
   ClockIcon,
   DocumentTextIcon,
   CogIcon,
+  ChartBarIcon,
+  ExclamationTriangleIcon,
+  BellIcon,
 } from '@heroicons/vue/24/outline'
 
 const config = useRuntimeConfig()
@@ -43,7 +46,10 @@ const navItems = [
   { path: '/', label: 'Dashboard', icon: HomeIcon },
   { path: '/browse', label: 'File Browser', icon: FolderOpenIcon },
   { path: '/tasks', label: 'Sync Tasks', icon: ArrowPathIcon },
+  { path: '/stats', label: 'Traffic Stats', icon: ChartBarIcon },
+  { path: '/conflicts', label: 'Conflicts', icon: ExclamationTriangleIcon },
   { path: '/logs', label: 'History', icon: DocumentTextIcon },
+  { path: '/notifications', label: 'Notifications', icon: BellIcon },
   { path: '/settings', label: 'Settings', icon: CogIcon },
 ]
 
