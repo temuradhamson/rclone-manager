@@ -90,10 +90,15 @@ def _build_response(dirname: str, files: list[dict]) -> dict:
     }
 
 
-@router.post("/list")
-async def fm_list(request: Request):
-    data = await request.json() if request.headers.get("content-type", "").startswith("application/json") else {}
-    path = data.get("path", "").strip()
+@router.api_route("/list", methods=["GET", "POST"])
+async def fm_list(request: Request, path: str = ""):
+    if request.method == "POST":
+        try:
+            data = await request.json()
+            path = data.get("path", path).strip()
+        except Exception:
+            pass
+    path = path.strip()
 
     if not path:
         # Root: show storages
