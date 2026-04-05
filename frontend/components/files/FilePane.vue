@@ -161,6 +161,74 @@
         </div>
       </div>
     </Teleport>
+
+    <!-- Preview modal -->
+    <Teleport to="body">
+      <div
+        v-if="previewFile"
+        class="fixed inset-0 bg-black/80 flex items-center justify-center z-[100]"
+        @click.self="closePreview"
+        @keydown.escape="closePreview"
+      >
+        <div class="relative w-[90vw] h-[90vh] flex flex-col">
+          <!-- Header -->
+          <div class="flex items-center justify-between px-4 py-2 bg-gray-900/90 rounded-t-lg">
+            <span class="text-sm text-gray-300 truncate">{{ previewFile.basename }}</span>
+            <div class="flex gap-2">
+              <a
+                :href="previewUrl"
+                download
+                class="px-3 py-1 bg-gray-700 text-gray-300 rounded text-xs hover:bg-gray-600"
+              >Download</a>
+              <button @click="closePreview" class="px-3 py-1 bg-gray-700 text-gray-300 rounded text-xs hover:bg-gray-600">Close</button>
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div class="flex-1 bg-black rounded-b-lg overflow-hidden flex items-center justify-center">
+            <!-- Video -->
+            <video
+              v-if="previewType === 'video'"
+              :src="previewUrl"
+              controls
+              autoplay
+              class="max-w-full max-h-full"
+            />
+
+            <!-- Audio -->
+            <div v-else-if="previewType === 'audio'" class="flex flex-col items-center gap-6 p-8">
+              <div class="w-32 h-32 bg-gray-800 rounded-full flex items-center justify-center">
+                <svg class="w-16 h-16 text-blue-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+                </svg>
+              </div>
+              <p class="text-gray-400 text-sm">{{ previewFile.basename }}</p>
+              <audio :src="previewUrl" controls autoplay class="w-96" />
+            </div>
+
+            <!-- Image -->
+            <img
+              v-else-if="previewType === 'image'"
+              :src="previewUrl"
+              class="max-w-full max-h-full object-contain"
+            />
+
+            <!-- PDF -->
+            <iframe
+              v-else-if="previewType === 'pdf'"
+              :src="previewUrl"
+              class="w-full h-full"
+            />
+
+            <!-- Text -->
+            <pre
+              v-else-if="previewType === 'text'"
+              class="w-full h-full p-4 text-xs text-gray-300 font-mono overflow-auto bg-gray-950"
+            >{{ textContent }}</pre>
+          </div>
+        </div>
+      </div>
+    </Teleport>
   </div>
 </template>
 
@@ -192,6 +260,35 @@ const newFolderInput = ref<HTMLInputElement>()
 
 // Context menu
 const contextMenu = reactive({ show: false, x: 0, y: 0, file: null as any })
+
+// Preview
+const previewFile = ref<any>(null)
+const previewUrl = ref('')
+const previewType = ref<'video' | 'audio' | 'image' | 'pdf' | 'text' | ''>('')
+
+const VIDEO_EXTS = ['mp4', 'mkv', 'webm', 'mov', 'avi', 'm4v', 'ts']
+const AUDIO_EXTS = ['mp3', 'wav', 'flac', 'ogg', 'm4a', 'aac', 'wma']
+const IMAGE_EXTS = ['jpg', 'jpeg', 'png', 'gif', 'webp', 'bmp', 'svg']
+const PDF_EXTS = ['pdf']
+const TEXT_EXTS = ['txt', 'json', 'csv', 'md', 'html', 'css', 'js', 'ts', 'py', 'xml', 'yml', 'yaml', 'ini', 'conf', 'log', 'sh', 'bat', 'env']
+
+function getPreviewType(ext: string): typeof previewType.value {
+  if (VIDEO_EXTS.includes(ext)) return 'video'
+  if (AUDIO_EXTS.includes(ext)) return 'audio'
+  if (IMAGE_EXTS.includes(ext)) return 'image'
+  if (PDF_EXTS.includes(ext)) return 'pdf'
+  if (TEXT_EXTS.includes(ext)) return 'text'
+  return ''
+}
+
+const textContent = ref('')
+
+function closePreview() {
+  previewFile.value = null
+  previewUrl.value = ''
+  previewType.value = ''
+  textContent.value = ''
+}
 
 // Rename
 const renaming = ref(false)
@@ -251,16 +348,27 @@ function onFileClick(file: any) {
   selectedFile.value = file
 }
 
-function onFileDblClick(file: any) {
+async function onFileDblClick(file: any) {
   if (file.type === 'dir') {
     navigateTo(file.path)
-  } else {
-    // Preview: open in new tab
-    const ext = file.basename.split('.').pop()?.toLowerCase() || ''
-    const mediaExts = ['mp4','mkv','webm','mov','mp3','wav','flac','ogg','m4a','jpg','jpeg','png','gif','webp','bmp','pdf','txt','json','csv','md','html','css','js']
-    if (mediaExts.includes(ext)) {
-      const url = `http://127.0.0.1:8001/api/fm/preview?path=${encodeURIComponent(file.path)}`
-      window.open(url, '_blank')
+    return
+  }
+
+  const ext = file.basename.split('.').pop()?.toLowerCase() || ''
+  const type = getPreviewType(ext)
+  if (!type) return
+
+  const url = `http://127.0.0.1:8001/api/fm/preview?path=${encodeURIComponent(file.path)}`
+  previewFile.value = file
+  previewType.value = type
+  previewUrl.value = url
+
+  if (type === 'text') {
+    try {
+      const resp = await fetch(url)
+      textContent.value = await resp.text()
+    } catch {
+      textContent.value = 'Failed to load file'
     }
   }
 }
