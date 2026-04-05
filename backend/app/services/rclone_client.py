@@ -101,7 +101,8 @@ class RcloneClient:
         from app.core.config import settings
 
         # Clean up stale lock files before running bisync
-        bisync_dir = Path.home() / "AppData" / "Local" / "rclone" / "bisync"
+        user_home = Path(settings.rclone_path).parent.parent / "Users" / "xtech"
+        bisync_dir = user_home / "AppData" / "Local" / "rclone" / "bisync"
         if bisync_dir.exists():
             for lck in bisync_dir.glob("*.lck"):
                 try:
@@ -110,7 +111,12 @@ class RcloneClient:
                 except OSError:
                     pass
 
-        cmd = [settings.rclone_path, "bisync", path1, path2, "-v"]
+        user_appdata = Path(settings.rclone_path).parent.parent / "Users" / "xtech" / "AppData"
+        rclone_conf = user_appdata / "Roaming" / "rclone" / "rclone.conf"
+        rclone_cache = user_appdata / "Local" / "rclone"
+        cmd = [settings.rclone_path, "bisync", path1, path2, "-v",
+               "--config", str(rclone_conf),
+               "--cache-dir", str(rclone_cache)]
         if resync:
             cmd.append("--resync")
         # Add config flags
