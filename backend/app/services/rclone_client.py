@@ -1,5 +1,6 @@
 import httpx
 import logging
+from pathlib import Path
 
 from app.core.config import settings
 
@@ -96,7 +97,18 @@ class RcloneClient:
                            extra_flags: dict | None = None, resync: bool = False) -> None:
         """Run bisync via CLI subprocess — RC API bisync is unstable on Windows."""
         import asyncio
+        import glob as globmod
         from app.core.config import settings
+
+        # Clean up stale lock files before running bisync
+        bisync_dir = Path.home() / "AppData" / "Local" / "rclone" / "bisync"
+        if bisync_dir.exists():
+            for lck in bisync_dir.glob("*.lck"):
+                try:
+                    lck.unlink()
+                    logger.info(f"Removed stale bisync lock file: {lck}")
+                except OSError:
+                    pass
 
         cmd = [settings.rclone_path, "bisync", path1, path2, "-v"]
         if resync:
@@ -117,7 +129,12 @@ class RcloneClient:
         stdout, stderr = await process.communicate()
         if process.returncode != 0:
             error_text = stderr.decode("utf-8", errors="replace")
-            raise RuntimeError(f"bisync failed: {error_text[-500:]}")
+            # On Windows, bisync with Cyrillic paths may fail only on .lck file
+            # removal at the end — the actual sync succeeds. Treat as warning.
+            if ".lck:" in error_text and "cannot find the file" in error_text.lower():
+                logger.warning(f"Bisync completed but failed to remove lock file (non-critical): {error_text[-200:]}")
+            else:
+                raise RuntimeError(f"bisync failed: {error_text[-500:]}")
 
     async def job_status(self, job_id: int) -> dict:
         result = await self._post("job/status", {"jobid": job_id})

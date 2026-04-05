@@ -10,15 +10,20 @@ if sys.platform == "win32":
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from sqlalchemy import select, update
+
 from app.core.config import settings
-from app.core.database import engine
+from app.core.database import engine, async_session
 from app.core.rclone_daemon import daemon
-from app.models.models import Base
+from app.models.models import Base, TaskExecution
 from app.services.progress_monitor import start_monitor, stop_monitor
+from app.services.scheduler import start_scheduler, stop_scheduler
 
 from app.api.routes import files, remotes, tasks, execution, ws
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(name)s %(levelname)s %(message)s")
+# Suppress noisy httpx request logging from progress monitor polling
+logging.getLogger("httpx").setLevel(logging.WARNING)
 logger = logging.getLogger(__name__)
 
 
@@ -33,15 +38,35 @@ async def lifespan(app: FastAPI):
         await conn.run_sync(Base.metadata.create_all)
     logger.info("Database ready")
 
+    # Clean up stale "running" executions from previous crash/restart
+    async with async_session() as db:
+        from datetime import datetime
+        result = await db.execute(
+            update(TaskExecution)
+            .where(TaskExecution.status == "running")
+            .values(
+                status="failed",
+                error_message="Stale: marked as failed during startup",
+                finished_at=datetime.utcnow(),
+            )
+        )
+        if result.rowcount:
+            await db.commit()
+            logger.info(f"Cleaned up {result.rowcount} stale running execution(s)")
+
     # Start rclone daemon
     await daemon.start()
 
     # Start progress monitor
     start_monitor()
 
+    # Start scheduler
+    start_scheduler()
+
     yield
 
     # Shutdown
+    stop_scheduler()
     stop_monitor()
     await daemon.stop()
     await engine.dispose()

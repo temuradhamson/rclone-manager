@@ -29,8 +29,11 @@ async def stop(task_id: int, db: AsyncSession = Depends(get_db)):
         )
     )
     execution = result.scalar_one_or_none()
-    if not execution or not execution.rclone_job_id:
+    if not execution:
         raise HTTPException(404, "No running execution found")
+    if not execution.rclone_job_id or execution.rclone_job_id < 0:
+        # Bisync runs as subprocess — cancel not supported via RC API
+        raise HTTPException(400, "Bisync task cannot be stopped via API (runs as subprocess)")
     await rclone_client.job_stop(execution.rclone_job_id)
     return {"status": "stopping"}
 

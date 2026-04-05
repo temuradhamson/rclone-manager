@@ -19,9 +19,22 @@ export function useRcloneWs() {
   const progress = ref<Map<number, ProgressData>>(new Map())
   const events = ref<ProgressData[]>([])
   let ws: WebSocket | null = null
+  let retryCount = 0
+  let stopped = false
 
   function connect() {
+    stopped = false
+    retryCount = 0
+    _connect()
+  }
+
+  function _connect() {
+    if (stopped) return
     ws = new WebSocket(`${config.public.wsBase}/api/ws/progress`)
+
+    ws.onopen = () => {
+      retryCount = 0
+    }
 
     ws.onmessage = (event) => {
       const msg: ProgressData = JSON.parse(event.data)
@@ -37,11 +50,15 @@ export function useRcloneWs() {
     }
 
     ws.onclose = () => {
-      setTimeout(connect, 3000)
+      if (stopped) return
+      const delay = Math.min(3000 * Math.pow(2, retryCount), 30000)
+      retryCount++
+      setTimeout(_connect, delay)
     }
   }
 
   function disconnect() {
+    stopped = true
     ws?.close()
     ws = null
   }

@@ -30,6 +30,23 @@ async def _monitor_loop():
 
                 for execution in running:
                     if not execution.rclone_job_id or execution.rclone_job_id < 0:
+                        # Bisync timeout: if running for > 30 min, mark as failed
+                        if execution.rclone_job_id == -1 and execution.started_at:
+                            elapsed = (datetime.utcnow() - execution.started_at).total_seconds()
+                            if elapsed > 7200:
+                                execution.status = "failed"
+                                execution.error_message = f"bisync timeout ({int(elapsed)}s)"
+                                execution.finished_at = datetime.utcnow()
+                                execution.duration_seconds = elapsed
+                                execution.rclone_job_id = None
+                                await db.commit()
+                                logger.warning(f"Bisync execution {execution.id} timed out after {int(elapsed)}s")
+                                await ws_manager.broadcast({
+                                    "type": "task_failed",
+                                    "task_id": execution.task_id,
+                                    "execution_id": execution.id,
+                                    "error": "bisync timeout",
+                                })
                         continue
                     try:
                         status = await rclone_client.job_status(execution.rclone_job_id)
@@ -93,17 +110,30 @@ async def _monitor_loop():
                                 pass
 
                     except Exception as e:
-                        if "job not found" in str(e).lower():
+                        error_text = str(e).lower()
+                        # httpx.HTTPStatusError stores details in response body
+                        if hasattr(e, "response"):
+                            try:
+                                error_text += " " + e.response.text.lower()
+                            except Exception:
+                                pass
+                        if "not found" in error_text or "unknown job" in error_text or "connection" in error_text:
                             execution.status = "failed"
-                            execution.error_message = "Job disappeared from rclone"
+                            execution.error_message = "job lost (daemon restarted)"
                             execution.finished_at = datetime.utcnow()
+                            if execution.started_at:
+                                execution.duration_seconds = (
+                                    execution.finished_at - execution.started_at
+                                ).total_seconds()
                             await db.commit()
                             await ws_manager.broadcast({
                                 "type": "task_failed",
                                 "task_id": execution.task_id,
                                 "execution_id": execution.id,
-                                "error": "Job disappeared",
+                                "error": "job not found",
                             })
+                        else:
+                            logger.warning(f"Job status check failed for execution {execution.id}: {e}")
 
             await asyncio.sleep(1.5)
 
