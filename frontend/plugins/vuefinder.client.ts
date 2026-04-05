@@ -1,11 +1,11 @@
 import { VueFinderPlugin } from 'vuefinder'
+// @ts-ignore - raw import bypasses PostCSS entirely
+import cssText from 'vuefinder/dist/vuefinder.css?raw'
 
-export default defineNuxtPlugin(async (nuxtApp) => {
+export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.use(VueFinderPlugin)
 
-  // Dynamically inject VueFinder CSS to bypass Tailwind PostCSS processing
-  const cssModule = await import('vuefinder/dist/vuefinder.css?inline')
   const style = document.createElement('style')
-  style.textContent = cssModule.default
+  style.textContent = cssText
   document.head.appendChild(style)
 })
